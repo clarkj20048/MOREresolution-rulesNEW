@@ -689,7 +689,7 @@
   border-left: 4px solid #f59e0b;
   transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
   animation-delay: 0.3s;
-  opacity: 0;
+  opacity: 1;
 }
 
 .pending-resolutions-container:hover {

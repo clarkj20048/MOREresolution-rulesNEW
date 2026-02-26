@@ -227,7 +227,7 @@ function Home() {
                           <div className="action-buttons">
                             {resolution.file_path && (
                               <a 
-                                href={`http://localhost:3001${resolution.file_path}`}
+                                href={`http://mepc-resolution-ruleswebsite.onrender.com${resolution.file_path}`}
                                 className="view-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
