@@ -20,7 +20,7 @@ function Home() {
   const fetchResolutions = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:3001/api/resolutions');
+      const response = await fetch('http://mepc-resolution-ruleswebsite.onrender.com');
       
       // Check if response has content
       const text = await response.text();

@@ -53,7 +53,7 @@ function Add() {
         const formDataUpload = new FormData();
         formDataUpload.append('pdfFile', formData.file);
 
-        const uploadResponse = await fetch('http://localhost:3001/api/upload', {
+        const uploadResponse = await fetch('http://mepc-resolution-ruleswebsite.onrender.com/api/upload', {
           method: 'POST',
           body: formDataUpload,
         });
@@ -70,7 +70,7 @@ function Add() {
       }
 
       // Submit resolution to pending list
-      const response = await fetch('http://localhost:3001/api/pending-resolutions', {
+      const response = await fetch('http://mepc-resolution-ruleswebsite.onrender.com/api/pending-resolutions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
