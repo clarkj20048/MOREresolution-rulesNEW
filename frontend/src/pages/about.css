@@ -3,7 +3,7 @@
 .about-container {
   min-height: calc(100vh - 80px);
   background: linear-gradient(135deg, #1a472a 0%, #0d2818 100%);
-  padding: 3rem 2rem;
+  padding: 2rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,13 +28,13 @@
 }
 
 .about-content {
-  max-width: 1200px;
+  max-width: 980px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 2rem;
   position: relative;
   z-index: 1;
 }
@@ -45,12 +45,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 2rem;
+  padding-left: 1rem;
   animation: fadeInLeft 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .about-logo img {
-  max-width: 400px;
+  max-width: 330px;
   width: 100%;
   height: auto;
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
@@ -59,25 +59,25 @@
 }
 
 .about-logo img:hover {
-  transform: scale(1.05);
+  transform: translateY(-1px);
   filter: drop-shadow(0 15px 40px rgba(76, 175, 80, 0.3));
 }
 
 /* RIGHT SIDE — TEXT */
 .about-text {
   flex: 1;
-  max-width: 600px;
-  padding-left: 2rem;
-  animation: fadeInRight 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  max-width: 520px;
+  padding-left: 10rem;
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   animation-delay: 0.3s;
   opacity: 0;
 }
 
 .about-title {
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
   letter-spacing: -0.02em;
   animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -86,11 +86,11 @@
 }
 
 .about-description {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #e8f5e9;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  animation: fadeInUp 0.5s ease-out forwards;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  animation: fadeInUp 0.8s forwards;
   animation-delay: 0.5s;
   opacity: 0;
 }
@@ -99,11 +99,11 @@
   display: inline-block;
   background-color: #4caf50;
   color: #ffffff;
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -131,8 +131,8 @@
 
 .about-cta:hover {
   background-color: #66bb6a;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(76, 175, 80, 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.26), 0 0 14px rgba(76, 175, 80, 0.3);
 }
 
 .about-cta:hover::before {
@@ -228,11 +228,11 @@
   }
 
   .about-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .about-description {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
 
   .about-logo {
@@ -240,30 +240,30 @@
   }
 
   .about-logo img {
-    max-width: 280px;
+    max-width: 220px;
   }
 }
 
 @media (max-width: 480px) {
   .about-container {
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.9rem;
   }
 
   .about-title {
-    font-size: 2rem;
+    font-size: 1.45rem;
   }
 
   .about-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .about-cta {
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
   }
 
   .about-logo img {
-    max-width: 130px;
+    max-width: 120px;
   }
 }
 
@@ -271,8 +271,8 @@
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column-reverse;
-    gap: 1.25rem;
-    padding: 2rem 1rem;
+    gap: 1rem;
+    padding: 1.5rem 0.9rem;
     text-align: center;
   }
 
@@ -284,18 +284,18 @@
   }
 
   .about-title {
-    font-size: 2.1rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 
   .about-description {
-    font-size: 1rem;
+    font-size: 0.92rem;
     line-height: 1.6;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   .about-logo img {
-    max-width: 220px;
+    max-width: 180px;
   }
 }
 
@@ -306,14 +306,14 @@
   }
 
   .about-title {
-    font-size: 1.7rem;
+    font-size: 1.35rem;
   }
 
   .about-description {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
   }
 
   .about-logo img {
-    max-width: 170px;
+    max-width: 140px;
   }
 }

@@ -53,8 +53,9 @@ html, body, #root {
 
   /* Typography */
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
+  font-size: 15px;
 
   /* Color Scheme - Dark only */
   color-scheme: dark;
@@ -69,8 +70,8 @@ html, body, #root {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.4em;
+  line-height: 1.2;
   color: var(--color-text-primary);
 }
 
@@ -82,7 +83,7 @@ h2, h3, h4, h5, h6 {
 
 p {
   color: var(--color-text-secondary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 /* Links - Green Accent with Animation */
@@ -103,8 +104,8 @@ a:hover {
 button {
   border-radius: 8px;
   border: 1px solid var(--color-accent);
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.5em 0.95em;
+  font-size: 0.95em;
   font-weight: 500;
   font-family: inherit;
   background-color: transparent;
@@ -119,7 +120,7 @@ button:hover {
   background-color: var(--color-accent);
   color: var(--color-bg-primary);
   border-color: var(--color-accent);
-  box-shadow: 0 0 20px var(--color-accent-glow);
+  box-shadow: 0 0 14px var(--color-accent-glow);
 }
 
 button:active {
@@ -167,14 +168,14 @@ button.secondary:hover,
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-bg-tertiary);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1rem;
   transition: all var(--animation-duration-normal) var(--animation-ease-default);
 }
 
 .card:hover {
   border-color: var(--color-accent-glow);
-  box-shadow: 0 10px 40px rgba(16, 185, 129, 0.15);
-  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.12);
+  transform: translateY(-2px);
 }
 
 /* Input Styles with Animation */
@@ -183,15 +184,15 @@ input, textarea, select {
   border: 1px solid var(--color-bg-tertiary);
   color: var(--color-text-primary);
   border-radius: 8px;
-  padding: 0.75rem 1rem;
-  font-size: 1em;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.95em;
   font-family: inherit;
   transition: all var(--animation-duration-normal) var(--animation-ease-default);
 }
 
 input:focus, textarea:focus, select:focus {
   border-color: var(--color-accent);
-  box-shadow: 0 0 15px var(--color-accent-glow);
+  box-shadow: 0 0 10px var(--color-accent-glow);
   outline: none;
 }
 
