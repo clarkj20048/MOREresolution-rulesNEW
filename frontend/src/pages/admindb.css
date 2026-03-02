@@ -835,3 +835,98 @@
     transform: translateX(5px);
   }
 }
+
+/* Extra mobile tuning for dashboard readability */
+@media (max-width: 768px) {
+  .admindb-container {
+    padding: 1rem 0.75rem;
+  }
+
+  .admindb-content {
+    gap: 1rem;
+  }
+
+  .admindb-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .resolutions-table-container,
+  .pending-resolutions-container,
+  .contact-messages-section,
+  .data-table-container {
+    padding: 1rem;
+    border-radius: 12px;
+    max-height: none;
+    overflow-x: auto;
+  }
+
+  .resolutions-title,
+  .pending-resolutions-title,
+  .contact-messages-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .resolutions-table,
+  .pending-resolutions-table,
+  .contacts-table,
+  .data-table {
+    min-width: 640px;
+  }
+
+  .resolutions-table th,
+  .resolutions-table td,
+  .pending-resolutions-table th,
+  .pending-resolutions-table td,
+  .contacts-table th,
+  .contacts-table td,
+  .data-table th,
+  .data-table td {
+    padding: 0.625rem;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  .action-buttons {
+    flex-wrap: wrap;
+  }
+
+  .view-link,
+  .download-link,
+  .delete-button,
+  .accept-button,
+  .reject-button,
+  .view-message-button {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admindb-container {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .admindb-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .resolutions-title,
+  .pending-resolutions-title,
+  .contact-messages-section h2 {
+    font-size: 1.05rem;
+  }
+
+  .message-modal-content {
+    width: 95%;
+    max-height: 85vh;
+  }
+
+  .message-modal-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .message-modal-body {
+    padding: 1rem;
+  }
+}

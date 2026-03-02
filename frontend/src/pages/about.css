@@ -266,3 +266,54 @@
     max-width: 130px;
   }
 }
+
+/* Direct mobile layout support for current JSX structure */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    gap: 1.25rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .about-text,
+  .about-logo {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .about-title {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-logo img {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 1.5rem 0.9rem;
+    min-height: auto;
+  }
+
+  .about-title {
+    font-size: 1.7rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .about-logo img {
+    max-width: 170px;
+  }
+}
